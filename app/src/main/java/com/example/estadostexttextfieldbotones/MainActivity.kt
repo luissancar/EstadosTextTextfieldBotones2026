@@ -11,6 +11,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.estadostexttextfieldbotones.Components.MyTextField
+import com.example.estadostexttextfieldbotones.Components.MyTextFieldParent
 import com.example.estadostexttextfieldbotones.Components.MyTexts
 import com.example.estadostexttextfieldbotones.state.MyState
 import com.example.estadostexttextfieldbotones.state.MyState2
@@ -25,7 +27,9 @@ class MainActivity : ComponentActivity() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                    // MyState(modifier = Modifier.padding(innerPadding))
                  //   MyState2(modifier = Modifier.padding(innerPadding))
-                    MyTexts("texto",modifier = Modifier.padding(innerPadding))
+                   // MyTexts("texto",modifier = Modifier.padding(innerPadding))
+                  //  MyTextField(modifier = Modifier.padding(innerPadding))
+                    MyTextFieldParent(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
