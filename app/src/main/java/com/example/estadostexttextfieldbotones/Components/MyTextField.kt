@@ -12,6 +12,7 @@ import androidx.compose.material.icons.filled.Visibility
 import androidx.compose.material.icons.filled.VisibilityOff
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
@@ -64,7 +65,7 @@ fun MyTextFieldParent(modifier: Modifier = Modifier) {
 @Composable
 fun MyPasswordTextField(password: String, onValueChange: (String) -> Unit) {
     var visible by rememberSaveable { mutableStateOf(false) }
-    TextField(
+    OutlinedTextField(
         password, onValueChange = { onValueChange(it) },
         singleLine = true,
         label = { Text("Contraseña") },
