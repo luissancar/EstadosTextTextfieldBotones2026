@@ -45,7 +45,7 @@ fun MyTexts(text: String = "Texto", modifier: Modifier = Modifier) {
         )
 
         Text(
-            "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#\$%^&*()-_=+[]{};:'\",.<>?/|\\`~¡¿\n",
+            "\n",
             modifier = Modifier
                 .fillMaxWidth()
                 .background(Color.Red),
